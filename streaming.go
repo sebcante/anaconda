@@ -43,7 +43,9 @@ type locationDeletionNotice struct {
 
 type LimitNotice struct {
 	Track int64 `json:"track"`
+	TimeStampMs string `json:"timestamp_ms"`
 }
+
 type limitNotice struct {
 	Limit *LimitNotice `json:"limit"`
 }
